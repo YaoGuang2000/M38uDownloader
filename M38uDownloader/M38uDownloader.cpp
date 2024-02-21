@@ -40,7 +40,7 @@ int main() {
     cout << "请输入下载文件的名字(自定义)"<<endl;
     string output_mp4 = ""; 
     cin >> output_mp4;
-    string outputfile = output_mp4+".mkv";
-    downloadStreamAsMKV(m3u8_url.c_str(), outputfile.c_str());
+    string outputfile = output_mp4+".mp4";
+    downloadAndConvert(m3u8_url.c_str(), outputfile.c_str());
     return 0;
 }
